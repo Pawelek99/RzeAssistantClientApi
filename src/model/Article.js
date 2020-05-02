@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ModelObject from './ModelObject';
 
 /**
 * The Article model module.
@@ -31,8 +30,8 @@ export default class Article {
     * @param updatedAt {String} Update date of the article
     * @param dislikes {Number} Number of dislikes
     * @param likes {Number} Number of likes
-    * @param category {module:model/ModelObject} 
-    * @param author {module:model/ModelObject} 
+    * @param category {} 
+    * @param author {} 
     */
 
     constructor(id, title, content, createdAt, updatedAt, dislikes, likes, category, author) {
@@ -129,11 +128,11 @@ export default class Article {
     */
     likes = undefined;
     /**
-    * @member {module:model/ModelObject} category
+    * @member {} category
     */
     category = undefined;
     /**
-    * @member {module:model/ModelObject} author
+    * @member {} author
     */
     author = undefined;
 

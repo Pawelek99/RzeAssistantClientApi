@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ModelObject from './ModelObject';
 import User from './User';
 
 /**

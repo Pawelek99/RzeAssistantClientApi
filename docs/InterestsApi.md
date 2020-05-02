@@ -1,6 +1,6 @@
 # KnowYourPlaceApi.InterestsApi
 
-All URIs are relative to *http://pointlessapps.tech:3001*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,6 +16,13 @@ Creates a new interest
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.InterestsApi();
 let body = new KnowYourPlaceApi.CreateInterestDto(); // CreateInterestDto | 
@@ -41,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -57,6 +64,13 @@ Returns all interests
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.InterestsApi();
 apiInstance.interestControllerFindAll((error, data, response) => {
@@ -77,7 +91,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

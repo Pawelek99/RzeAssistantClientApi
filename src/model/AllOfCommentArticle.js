@@ -13,7 +13,6 @@
 
 import ApiClient from '../ApiClient';
 import Article from './Article';
-import ModelObject from './ModelObject';
 
 /**
 * The AllOfCommentArticle model module.

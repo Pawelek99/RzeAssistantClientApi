@@ -1,11 +1,11 @@
 {
   "name": "rzeassistant_client_api",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "RzeAssistant API client",
   "license": "ISC",
   "main": "distribution/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test": "mocha --recursive test",
     "build": "babel src --out-dir distribution",
     "prepublish": "npm run build"
   },

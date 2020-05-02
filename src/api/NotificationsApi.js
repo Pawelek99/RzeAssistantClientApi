@@ -61,7 +61,7 @@ export default class NotificationsApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearer'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = InlineResponse201;
@@ -98,7 +98,7 @@ export default class NotificationsApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = [Notification];

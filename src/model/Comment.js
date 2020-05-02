@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ModelObject from './ModelObject';
 
 /**
 * The Comment model module.
@@ -27,8 +26,8 @@ export default class Comment {
     * @param id {String} Id of the comment
     * @param content {String} Content of the comment
     * @param createdAt {String} Creation date of the comment
-    * @param article {module:model/ModelObject} 
-    * @param author {module:model/ModelObject} 
+    * @param article {} 
+    * @param author {} 
     */
 
     constructor(id, content, createdAt, article, author) {
@@ -89,11 +88,11 @@ export default class Comment {
     */
     createdAt = undefined;
     /**
-    * @member {module:model/ModelObject} article
+    * @member {} article
     */
     article = undefined;
     /**
-    * @member {module:model/ModelObject} author
+    * @member {} author
     */
     author = undefined;
 

@@ -1,6 +1,6 @@
 # KnowYourPlaceApi.ImagesApi
 
-All URIs are relative to *http://pointlessapps.tech:3001*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,6 +17,13 @@ Uploads a new image
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ImagesApi();
 let file = file_example; // Blob | 
@@ -42,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -58,6 +65,13 @@ Removes an image
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ImagesApi();
 let id = "id_example"; // String | 
@@ -83,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

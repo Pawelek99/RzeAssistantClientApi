@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ModelObject from './ModelObject';
 
 /**
 * The Notification model module.
@@ -27,8 +26,8 @@ export default class Notification {
     * @param id {String} This is id
     * @param content {String} Content of the notification
     * @param createdAt {String} Creation date of the notification
-    * @param sender {module:model/ModelObject} 
-    * @param recipient {module:model/ModelObject} 
+    * @param sender {} 
+    * @param recipient {} 
     */
 
     constructor(id, content, createdAt, sender, recipient) {
@@ -89,11 +88,11 @@ export default class Notification {
     */
     createdAt = undefined;
     /**
-    * @member {module:model/ModelObject} sender
+    * @member {} sender
     */
     sender = undefined;
     /**
-    * @member {module:model/ModelObject} recipient
+    * @member {} recipient
     */
     recipient = undefined;
 

@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ModelObject from './ModelObject';
 
 /**
 * The BannedUser model module.
@@ -27,7 +26,7 @@ export default class BannedUser {
     * @param id {String} Id of the banned user
     * @param bannedAt {String} Date when user got banned
     * @param reason {String} Reason why user is banned
-    * @param user {module:model/ModelObject} 
+    * @param user {} 
     */
 
     constructor(id, bannedAt, reason, user) {
@@ -84,7 +83,7 @@ export default class BannedUser {
     */
     reason = undefined;
     /**
-    * @member {module:model/ModelObject} user
+    * @member {} user
     */
     user = undefined;
 

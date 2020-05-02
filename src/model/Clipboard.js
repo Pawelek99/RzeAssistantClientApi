@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ModelObject from './ModelObject';
 
 /**
 * The Clipboard model module.
@@ -25,7 +24,7 @@ export default class Clipboard {
     * @alias module:model/Clipboard
     * @class
     * @param id {String} Id of the clipboard
-    * @param user {module:model/ModelObject} 
+    * @param user {} 
     * @param articles {Array.<String>} Articles in Clipboard
     */
 
@@ -69,7 +68,7 @@ export default class Clipboard {
     */
     id = undefined;
     /**
-    * @member {module:model/ModelObject} user
+    * @member {} user
     */
     user = undefined;
     /**

@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ModelObject from './ModelObject';
 
 /**
 * The User model module.
@@ -29,8 +28,8 @@ export default class User {
     * @param lastName {String} User lastname
     * @param email {String} User email adress
     * @param passwordHash {String} User password
-    * @param role {module:model/ModelObject} 
-    * @param theme {module:model/ModelObject} 
+    * @param role {} 
+    * @param theme {} 
     */
 
     constructor(id, name, lastName, email, passwordHash, role, theme) {
@@ -112,15 +111,15 @@ export default class User {
     */
     passwordHash = undefined;
     /**
-    * @member {module:model/ModelObject} role
+    * @member {} role
     */
     role = undefined;
     /**
-    * @member {module:model/ModelObject} interest
+    * @member {} interest
     */
     interest = undefined;
     /**
-    * @member {module:model/ModelObject} theme
+    * @member {} theme
     */
     theme = undefined;
 

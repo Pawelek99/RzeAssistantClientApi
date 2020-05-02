@@ -1,6 +1,6 @@
 # KnowYourPlaceApi.ClipboardsApi
 
-All URIs are relative to *http://pointlessapps.tech:3001*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,6 +19,13 @@ Adds a article to the clipboard
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ClipboardsApi();
 let body = new KnowYourPlaceApi.UpdateClipboardDto(); // UpdateClipboardDto | 
@@ -46,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -62,6 +69,13 @@ Creates a new clipboard
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ClipboardsApi();
 let body = new KnowYourPlaceApi.CreateClipboardDto(); // CreateClipboardDto | 
@@ -87,7 +101,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -103,6 +117,13 @@ Returns a clipboard by id
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ClipboardsApi();
 let id = "id_example"; // String | 
@@ -128,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -144,6 +165,13 @@ Removes a article from the clipboard
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ClipboardsApi();
 let body = new KnowYourPlaceApi.UpdateClipboardDto(); // UpdateClipboardDto | 
@@ -171,7 +199,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -187,6 +215,13 @@ Removes a clipboard by id
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ClipboardsApi();
 let id = "id_example"; // String | 
@@ -212,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

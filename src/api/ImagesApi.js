@@ -60,7 +60,7 @@ export default class ImagesApi {
         'file': file
       };
 
-      let authNames = [];
+      let authNames = ['bearer'];
       let contentTypes = ['multipart/form-data'];
       let accepts = ['application/json'];
       let returnType = InlineResponse2011;
@@ -97,7 +97,7 @@ export default class ImagesApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = InlineResponse2001;

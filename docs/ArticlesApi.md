@@ -1,6 +1,6 @@
 # KnowYourPlaceApi.ArticlesApi
 
-All URIs are relative to *http://pointlessapps.tech:3001*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,6 +20,13 @@ Creates a new article
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ArticlesApi();
 let body = new KnowYourPlaceApi.CreateArticleDto(); // CreateArticleDto | 
@@ -45,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -61,6 +68,13 @@ Returns an article by id
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ArticlesApi();
 let id = "id_example"; // String | 
@@ -86,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -102,6 +116,13 @@ No authorization required
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ArticlesApi();
 let phrase = "phrase_example"; // String | 
@@ -127,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -143,6 +164,13 @@ Updates an article by id
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ArticlesApi();
 let body = new KnowYourPlaceApi.UpdateArticleDto(); // UpdateArticleDto | 
@@ -170,7 +198,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -186,6 +214,13 @@ Updates dislike count of the article
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ArticlesApi();
 let body = new KnowYourPlaceApi.UpdateArticleRatingDto(); // UpdateArticleRatingDto | 
@@ -213,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -229,6 +264,13 @@ Updates like count of the article
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ArticlesApi();
 let body = new KnowYourPlaceApi.UpdateArticleRatingDto(); // UpdateArticleRatingDto | 
@@ -256,7 +298,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

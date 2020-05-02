@@ -1,6 +1,6 @@
 # KnowYourPlaceApi.BannedArticleApi
 
-All URIs are relative to *http://pointlessapps.tech:3001*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,6 +16,13 @@ Creates a new banned article
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.BannedArticleApi();
 let body = new KnowYourPlaceApi.CreateBannedArticleDto(); // CreateBannedArticleDto | 
@@ -41,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -57,6 +64,13 @@ Returns banned article details
 ### Example
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.BannedArticleApi();
 let id = "id_example"; // String | 
@@ -82,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

@@ -31,16 +31,16 @@ export default class ApiClient {
         /**
          * The base URL against which to resolve every API call's (relative) path.
          * @type {String}
-         * @default http://pointlessapps.tech:3001
+         * @default /
          */
-        this.basePath = 'http://pointlessapps.tech:3001'.replace(/\/+$/, '');
+        this.basePath = '/'.replace(/\/+$/, '');
 
         /**
          * The authentication methods to be included for all API calls.
          * @type {Array.<String>}
          */
         this.authentications = {
-            'api_key': {type: 'apiKey', 'in': 'header', name: 'Authorization'}
+            'bearer': {type: 'apiKey', 'in': 'header', name: 'Authorization'}
         }
 
         /**

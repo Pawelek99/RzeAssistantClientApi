@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import ModelObject from './ModelObject';
 
 /**
 * The InlineResponse4042 model module.
@@ -52,7 +51,7 @@ export default class InlineResponse4042 {
     }
 
     /**
-    * @member {module:model/ModelObject} oneOf
+    * @member {} oneOf
     */
     oneOf = undefined;
 
