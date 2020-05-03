@@ -1,6 +1,6 @@
 {
   "name": "rzeassistant_client_api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "RzeAssistant API client",
   "license": "ISC",
   "main": "distribution/index.js",
@@ -17,6 +17,7 @@
     "@babel/core": "^7.9.6",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
     "expect.js": "~0.3.1",
     "mocha": "~2.3.4",
     "sinon": "1.17.3"
@@ -31,7 +32,12 @@
       ]
     ],
     "presets": [
-      "@babel/preset-env"
+      [
+        "@babel/preset-typescript",
+        {
+          "allExtensions": true
+        }
+      ]
     ]
   }
 }
