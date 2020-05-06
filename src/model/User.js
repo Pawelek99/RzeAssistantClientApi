@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 
+
 /**
 * The User model module.
 * @module model/User

@@ -12,9 +12,11 @@
  */
 
 import ApiClient from "../ApiClient";
+import Image from '../model/Image';
 import InlineResponse2001 from '../model/InlineResponse2001';
 import InlineResponse2011 from '../model/InlineResponse2011';
 import InlineResponse404 from '../model/InlineResponse404';
+import InlineResponse4044 from '../model/InlineResponse4044';
 
 /**
 * Images service.
@@ -47,7 +49,7 @@ export default class ImagesApi {
      * @param {module:api/ImagesApi~imageControllerCreateCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/InlineResponse2011}
      */
-    imageControllerCreate(file, callback) {
+    imageControllerCreate(file, uploadedBy, callback) {
       let postBody = null;
 
       let pathParams = {
@@ -57,7 +59,8 @@ export default class ImagesApi {
       let headerParams = {
       };
       let formParams = {
-        'file': file
+        'file': file,
+        'uploadedBy': uploadedBy
       };
 
       let authNames = ['bearer'];
@@ -67,6 +70,43 @@ export default class ImagesApi {
 
       return this.apiClient.callApi(
         '/api/v1/images', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
+     * Callback function to receive the result of the imageControllerFindAllUploadedBy operation.
+     * @callback module:api/ImagesApi~imageControllerFindAllUploadedByCallback
+     * @param {String} error Error message, if any.
+     * @param {Array.<module:model/Image>} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Returns all images by user id
+     * @param {module:api/ImagesApi~imageControllerFindAllUploadedByCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Array.<module:model/Image>}
+     */
+    imageControllerFindAllUploadedBy(id, callback) {
+      let postBody = null;
+
+      let pathParams = {
+        'id': id
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['bearer'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = [Image];
+
+      return this.apiClient.callApi(
+        '/api/v1/images/user/{id}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

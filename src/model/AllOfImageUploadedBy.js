@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 import User from './User';
 
 /**
-* The AllOfArticleAuthor model module.
-* @module model/AllOfArticleAuthor
+* The AllOfImageUploadedBy model module.
+* @module model/AllOfImageUploadedBy
 * @version 0.0.1
 */
-export default class AllOfArticleAuthor {
+export default class AllOfImageUploadedBy {
     /**
-    * Constructs a new <code>AllOfArticleAuthor</code>.
-    * @alias module:model/AllOfArticleAuthor
+    * Constructs a new <code>AllOfImageUploadedBy</code>.
+    * @alias module:model/AllOfImageUploadedBy
     * @class
     * @extends module:model/User
     * @param id {} ID of the user entity
@@ -42,15 +42,15 @@ export default class AllOfArticleAuthor {
     }
 
     /**
-    * Constructs a <code>AllOfArticleAuthor</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>AllOfImageUploadedBy</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:model/AllOfArticleAuthor} obj Optional instance to populate.
-    * @return {module:model/AllOfArticleAuthor} The populated <code>AllOfArticleAuthor</code> instance.
+    * @param {module:model/AllOfImageUploadedBy} obj Optional instance to populate.
+    * @return {module:model/AllOfImageUploadedBy} The populated <code>AllOfImageUploadedBy</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new AllOfArticleAuthor();
+            obj = obj || new AllOfImageUploadedBy();
             
             User.constructFromObject(data, obj);
             

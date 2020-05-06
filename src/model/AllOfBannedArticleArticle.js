@@ -14,6 +14,7 @@
 import ApiClient from '../ApiClient';
 import Article from './Article';
 
+
 /**
 * The AllOfBannedArticleArticle model module.
 * @module model/AllOfBannedArticleArticle

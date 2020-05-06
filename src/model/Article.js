@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 
+
 /**
 * The Article model module.
 * @module model/Article

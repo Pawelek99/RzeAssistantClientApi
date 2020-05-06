@@ -19,6 +19,7 @@ import AllOfBannedUserUser from './model/AllOfBannedUserUser';
 import AllOfClipboardUser from './model/AllOfClipboardUser';
 import AllOfCommentArticle from './model/AllOfCommentArticle';
 import AllOfCommentAuthor from './model/AllOfCommentAuthor';
+import AllOfImageUploadedBy from './model/AllOfImageUploadedBy';
 import AllOfNotificationRecipient from './model/AllOfNotificationRecipient';
 import AllOfNotificationSender from './model/AllOfNotificationSender';
 import AllOfUserInterest from './model/AllOfUserInterest';
@@ -39,6 +40,7 @@ import CreateCommentDto from './model/CreateCommentDto';
 import CreateInterestDto from './model/CreateInterestDto';
 import CreateNotificationDto from './model/CreateNotificationDto';
 import CreateUserDto from './model/CreateUserDto';
+import Image from './model/Image';
 import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
 import InlineResponse201 from './model/InlineResponse201';
@@ -155,6 +157,12 @@ export {
      * @property {module:model/AllOfCommentAuthor}
      */
     AllOfCommentAuthor,
+
+    /**
+     * The AllOfImageUploadedBy model constructor.
+     * @property {module:model/AllOfImageUploadedBy}
+     */
+    AllOfImageUploadedBy,
 
     /**
      * The AllOfNotificationRecipient model constructor.
@@ -275,6 +283,12 @@ export {
      * @property {module:model/CreateUserDto}
      */
     CreateUserDto,
+
+    /**
+     * The Image model constructor.
+     * @property {module:model/Image}
+     */
+    Image,
 
     /**
      * The InlineResponse200 model constructor.

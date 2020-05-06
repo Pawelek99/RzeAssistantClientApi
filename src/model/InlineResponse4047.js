@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 
+
 /**
 * The InlineResponse4047 model module.
 * @module model/InlineResponse4047
@@ -43,18 +44,17 @@ export default class InlineResponse4047 {
             obj = obj || new InlineResponse4047();
                         
             
-            if (data.hasOwnProperty('status')) {
-                obj['status'] = ApiClient.convertToType(data['status'], 'String');
+            if (data.hasOwnProperty('oneOf')) {
+                obj['oneOf'] = ApiClient.convertToType(data['oneOf'], ModelObject);
             }
         }
         return obj;
     }
 
     /**
-    * Status of the action
-    * @member {String} status
+    * @member {} oneOf
     */
-    status = undefined;
+    oneOf = undefined;
 
 
 

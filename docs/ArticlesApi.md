@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**articleControllerCreate**](ArticlesApi.md#articleControllerCreate) | **POST** /api/v1/articles | Creates a new article
 [**articleControllerFindById**](ArticlesApi.md#articleControllerFindById) | **GET** /api/v1/articles/{id} | Returns an article by id
-[**articleControllerFindByPhrase**](ArticlesApi.md#articleControllerFindByPhrase) | **GET** /api/v1/articles |        Returns a list of articles containing phrase in title, content, date or category.       If the phrase is empty, returns all articles.     
+[**articleControllerFindByPhrase**](ArticlesApi.md#articleControllerFindByPhrase) | **GET** /api/v1/articles | Returns a list of articles containing phrase in the title, content, author or category. If the phrase is empty, returns all articles.
 [**articleControllerUpdate**](ArticlesApi.md#articleControllerUpdate) | **POST** /api/v1/articles/{id} | Updates an article by id
 [**articleControllerUpdateDislikesById**](ArticlesApi.md#articleControllerUpdateDislikesById) | **POST** /api/v1/articles/{id}/dislikes | Updates dislike count of the article
 [**articleControllerUpdateLikesById**](ArticlesApi.md#articleControllerUpdateLikesById) | **POST** /api/v1/articles/{id}/likes | Updates like count of the article
@@ -109,9 +109,9 @@ Name | Type | Description  | Notes
 
 <a name="articleControllerFindByPhrase"></a>
 # **articleControllerFindByPhrase**
-> [Article] articleControllerFindByPhrase(phrase)
+> [Article] articleControllerFindByPhrase(opts)
 
-       Returns a list of articles containing phrase in title, content, date or category.       If the phrase is empty, returns all articles.     
+Returns a list of articles containing phrase in the title, content, author or category. If the phrase is empty, returns all articles.
 
 ### Example
 ```javascript
@@ -125,9 +125,10 @@ bearer.apiKey = 'YOUR API KEY';
 //bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ArticlesApi();
-let phrase = "phrase_example"; // String | 
-
-apiInstance.articleControllerFindByPhrase(phrase, (error, data, response) => {
+let opts = { 
+  'phrase': "phrase_example" // String | Phrase to be looked for in the title, content, author or category.
+};
+apiInstance.articleControllerFindByPhrase(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -140,7 +141,7 @@ apiInstance.articleControllerFindByPhrase(phrase, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phrase** | **String**|  | 
+ **phrase** | **String**| Phrase to be looked for in the title, content, author or category. | [optional] 
 
 ### Return type
 

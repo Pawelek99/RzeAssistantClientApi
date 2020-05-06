@@ -121,17 +121,19 @@ export default class ArticlesApi {
      */
 
     /**
-     *        Returns a list of articles containing phrase in title, content, date or category.       If the phrase is empty, returns all articles.     
+     * Returns a list of articles containing phrase in the title, content, author or category. If the phrase is empty, returns all articles.
+     * @param {Object} opts Optional parameters
      * @param {module:api/ArticlesApi~articleControllerFindByPhraseCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/Article>}
      */
-    articleControllerFindByPhrase(phrase, callback) {
+    articleControllerFindByPhrase(opts, callback) {
+      opts = opts || {};
       let postBody = null;
 
       let pathParams = {
       };
       let queryParams = {
-        'phrase': phrase
+        'phrase': opts['phrase']
       };
       let headerParams = {
       };

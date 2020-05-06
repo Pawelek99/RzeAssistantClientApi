@@ -23,13 +23,15 @@ export default class UploadImageDto {
     * Constructs a new <code>UploadImageDto</code>.
     * @alias module:model/UploadImageDto
     * @class
-    * @param file {Blob} 
+    * @param file {Blob} File to be uploaded
+    * @param uploadedBy {String} Id of the user who uploaded the image
     */
 
-    constructor(file) {
+    constructor(file, uploadedBy) {
         
         
         this['file'] = file;
+        this['uploadedBy'] = uploadedBy;
         
     }
 
@@ -48,14 +50,23 @@ export default class UploadImageDto {
             if (data.hasOwnProperty('file')) {
                 obj['file'] = ApiClient.convertToType(data['file'], 'Blob');
             }
+            if (data.hasOwnProperty('uploadedBy')) {
+                obj['uploadedBy'] = ApiClient.convertToType(data['uploadedBy'], 'String');
+            }
         }
         return obj;
     }
 
     /**
+    * File to be uploaded
     * @member {Blob} file
     */
     file = undefined;
+    /**
+    * Id of the user who uploaded the image
+    * @member {String} uploadedBy
+    */
+    uploadedBy = undefined;
 
 
 

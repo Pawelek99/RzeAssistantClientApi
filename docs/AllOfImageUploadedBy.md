@@ -1,6 +1,5 @@
-# KnowYourPlaceApi.Body
+# KnowYourPlaceApi.AllOfImageUploadedBy
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**file** | **Blob** |  | [optional] 

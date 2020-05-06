@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 
+
 /**
 * The BannedUser model module.
 * @module model/BannedUser

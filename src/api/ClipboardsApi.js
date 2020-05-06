@@ -17,8 +17,8 @@ import CreateClipboardDto from '../model/CreateClipboardDto';
 import InlineResponse2001 from '../model/InlineResponse2001';
 import InlineResponse201 from '../model/InlineResponse201';
 import InlineResponse404 from '../model/InlineResponse404';
-import InlineResponse4044 from '../model/InlineResponse4044';
 import InlineResponse4045 from '../model/InlineResponse4045';
+import InlineResponse4046 from '../model/InlineResponse4046';
 import UpdateClipboardDto from '../model/UpdateClipboardDto';
 
 /**

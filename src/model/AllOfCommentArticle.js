@@ -14,6 +14,7 @@
 import ApiClient from '../ApiClient';
 import Article from './Article';
 
+
 /**
 * The AllOfCommentArticle model module.
 * @module model/AllOfCommentArticle

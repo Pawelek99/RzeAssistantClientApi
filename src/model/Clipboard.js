@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 
+
 /**
 * The Clipboard model module.
 * @module model/Clipboard

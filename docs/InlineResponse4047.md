@@ -3,4 +3,4 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**status** | **String** | Status of the action | [optional] 
+**oneOf** | [**ModelObject**](ModelObject.md) |  | [optional] 
