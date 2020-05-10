@@ -5,3 +5,4 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **String** | Name of the category | 
 **color** | **String** | Color of the category in hex | 
+**icon** | **String** | Icon of the category | 

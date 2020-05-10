@@ -25,13 +25,15 @@ export default class CreateCategoryDto {
     * @class
     * @param name {String} Name of the category
     * @param color {String} Color of the category in hex
+    * @param icon {String} Icon of the category
     */
 
-    constructor(name, color) {
+    constructor(name, color, icon) {
         
         
         this['name'] = name;
         this['color'] = color;
+        this['icon'] = icon;
         
     }
 
@@ -53,6 +55,9 @@ export default class CreateCategoryDto {
             if (data.hasOwnProperty('color')) {
                 obj['color'] = ApiClient.convertToType(data['color'], 'String');
             }
+            if (data.hasOwnProperty('icon')) {
+                obj['icon'] = ApiClient.convertToType(data['icon'], 'String');
+            }
         }
         return obj;
     }
@@ -67,6 +72,11 @@ export default class CreateCategoryDto {
     * @member {String} color
     */
     color = undefined;
+    /**
+    * Icon of the category
+    * @member {String} icon
+    */
+    icon = undefined;
 
 
 

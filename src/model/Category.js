@@ -26,14 +26,16 @@ export default class Category {
     * @param id {String} Id of the category
     * @param name {String} Name of the category
     * @param color {String} Color of the category in hex
+    * @param icon {String} Icon of the category
     */
 
-    constructor(id, name, color) {
+    constructor(id, name, color, icon) {
         
         
         this['id'] = id;
         this['name'] = name;
         this['color'] = color;
+        this['icon'] = icon;
         
     }
 
@@ -58,6 +60,9 @@ export default class Category {
             if (data.hasOwnProperty('color')) {
                 obj['color'] = ApiClient.convertToType(data['color'], 'String');
             }
+            if (data.hasOwnProperty('icon')) {
+                obj['icon'] = ApiClient.convertToType(data['icon'], 'String');
+            }
         }
         return obj;
     }
@@ -77,6 +82,11 @@ export default class Category {
     * @member {String} color
     */
     color = undefined;
+    /**
+    * Icon of the category
+    * @member {String} icon
+    */
+    icon = undefined;
 
 
 

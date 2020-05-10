@@ -28,10 +28,11 @@ export default class AllOfArticleCategory {
     * @param id {} Id of the category
     * @param name {} Name of the category
     * @param color {} Color of the category in hex
+    * @param icon {} Icon of the category
     */
 
-    constructor(id, name, color) {
-        Category.call(this, id, name, color);
+    constructor(id, name, color, icon) {
+        Category.call(this, id, name, color, icon);
         
         
     }
