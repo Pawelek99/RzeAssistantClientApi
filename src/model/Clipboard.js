@@ -54,7 +54,7 @@ export default class Clipboard {
                 obj['id'] = ApiClient.convertToType(data['id'], 'String');
             }
             if (data.hasOwnProperty('user')) {
-                obj['user'] = ApiClient.convertToType(data['user'], ModelObject);
+                obj['user'] = ApiClient.convertToType(data['user'], );
             }
             if (data.hasOwnProperty('articles')) {
                 obj['articles'] = ApiClient.convertToType(data['articles'], ['String']);

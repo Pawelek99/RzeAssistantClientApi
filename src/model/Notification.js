@@ -64,10 +64,10 @@ export default class Notification {
                 obj['createdAt'] = ApiClient.convertToType(data['createdAt'], 'String');
             }
             if (data.hasOwnProperty('sender')) {
-                obj['sender'] = ApiClient.convertToType(data['sender'], ModelObject);
+                obj['sender'] = ApiClient.convertToType(data['sender'], );
             }
             if (data.hasOwnProperty('recipient')) {
-                obj['recipient'] = ApiClient.convertToType(data['recipient'], ModelObject);
+                obj['recipient'] = ApiClient.convertToType(data['recipient'], );
             }
         }
         return obj;
