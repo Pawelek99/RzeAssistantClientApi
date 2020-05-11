@@ -84,10 +84,10 @@ export default class Article {
                 obj['likes'] = ApiClient.convertToType(data['likes'], 'Number');
             }
             if (data.hasOwnProperty('category')) {
-                obj['category'] = ApiClient.convertToType(data['category'], ModelObject);
+                obj['category'] = ApiClient.convertToType(data['category'], );
             }
             if (data.hasOwnProperty('author')) {
-                obj['author'] = ApiClient.convertToType(data['author'], ModelObject);
+                obj['author'] = ApiClient.convertToType(data['author'], );
             }
         }
         return obj;

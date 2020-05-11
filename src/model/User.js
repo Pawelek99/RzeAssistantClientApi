@@ -74,13 +74,13 @@ export default class User {
                 obj['passwordHash'] = ApiClient.convertToType(data['passwordHash'], 'String');
             }
             if (data.hasOwnProperty('role')) {
-                obj['role'] = ApiClient.convertToType(data['role'], ModelObject);
+                obj['role'] = ApiClient.convertToType(data['role'], );
             }
             if (data.hasOwnProperty('interest')) {
-                obj['interest'] = ApiClient.convertToType(data['interest'], ModelObject);
+                obj['interest'] = ApiClient.convertToType(data['interest'], );
             }
             if (data.hasOwnProperty('theme')) {
-                obj['theme'] = ApiClient.convertToType(data['theme'], ModelObject);
+                obj['theme'] = ApiClient.convertToType(data['theme'], );
             }
         }
         return obj;

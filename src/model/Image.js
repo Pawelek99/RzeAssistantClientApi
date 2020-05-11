@@ -57,7 +57,7 @@ export default class Image {
                 obj['extension'] = ApiClient.convertToType(data['extension'], 'String');
             }
             if (data.hasOwnProperty('uploadedBy')) {
-                obj['uploadedBy'] = ApiClient.convertToType(data['uploadedBy'], ModelObject);
+                obj['uploadedBy'] = ApiClient.convertToType(data['uploadedBy'], );
             }
         }
         return obj;
