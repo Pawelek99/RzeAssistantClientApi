@@ -76,6 +76,47 @@ export default class ArticlesApi {
       );
     }
     /**
+     * Callback function to receive the result of the articleControllerFindAll operation.
+     * @callback module:api/ArticlesApi~articleControllerFindAllCallback
+     * @param {String} error Error message, if any.
+     * @param {Array.<module:model/Article>} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Returns a list of articles containing phrase in the title, content, author or category, ordered by orderBy and limited to limit.If the phrase and the limit are empty, returns all articles.
+     * @param {Object} opts Optional parameters
+     * @param {module:api/ArticlesApi~articleControllerFindAllCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Array.<module:model/Article>}
+     */
+    articleControllerFindAll(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'phrase': opts['phrase'],
+        'limit': opts['limit'],
+        'orderBy': opts['orderBy']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['bearer'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = [Article];
+
+      return this.apiClient.callApi(
+        '/api/v1/articles', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
      * Callback function to receive the result of the articleControllerFindById operation.
      * @callback module:api/ArticlesApi~articleControllerFindByIdCallback
      * @param {String} error Error message, if any.
@@ -108,45 +149,6 @@ export default class ArticlesApi {
 
       return this.apiClient.callApi(
         '/api/v1/articles/{id}', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    }
-    /**
-     * Callback function to receive the result of the articleControllerFindByPhrase operation.
-     * @callback module:api/ArticlesApi~articleControllerFindByPhraseCallback
-     * @param {String} error Error message, if any.
-     * @param {Array.<module:model/Article>} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * Returns a list of articles containing phrase in the title, content, author or category. If the phrase is empty, returns all articles.
-     * @param {Object} opts Optional parameters
-     * @param {module:api/ArticlesApi~articleControllerFindByPhraseCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/Article>}
-     */
-    articleControllerFindByPhrase(opts, callback) {
-      opts = opts || {};
-      let postBody = null;
-
-      let pathParams = {
-      };
-      let queryParams = {
-        'phrase': opts['phrase']
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['bearer'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = [Article];
-
-      return this.apiClient.callApi(
-        '/api/v1/articles', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
