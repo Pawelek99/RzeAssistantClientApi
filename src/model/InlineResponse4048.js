@@ -54,7 +54,7 @@ export default class InlineResponse4048 {
     * Status of the action
     * @member {String} status
     */
-    status = undefined;
+    'status' = undefined;
 
 
 

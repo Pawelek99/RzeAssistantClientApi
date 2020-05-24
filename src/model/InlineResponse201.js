@@ -54,7 +54,7 @@ export default class InlineResponse201 {
     * ID of the created entity
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
 
 
 

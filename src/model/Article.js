@@ -13,7 +13,6 @@
 
 import ApiClient from '../ApiClient';
 
-
 /**
 * The Article model module.
 * @module model/Article
@@ -29,13 +28,13 @@ export default class Article {
     * @param content {String} Content of the article
     * @param createdAt {String} Creation date of the article
     * @param updatedAt {String} Update date of the article
-    * @param dislikes {Number} Number of dislikes
-    * @param likes {Number} Number of likes
+    * @param dislikesList {Array.<String>} List of dislikes' authors ids
+    * @param likesList {Array.<String>} List of likes' authors ids
     * @param category {} 
     * @param author {} 
     */
 
-    constructor(id, title, content, createdAt, updatedAt, dislikes, likes, category, author) {
+    constructor(id, title, content, createdAt, updatedAt, dislikesList, likesList, category, author) {
         
         
         this['id'] = id;
@@ -43,8 +42,8 @@ export default class Article {
         this['content'] = content;
         this['createdAt'] = createdAt;
         this['updatedAt'] = updatedAt;
-        this['dislikes'] = dislikes;
-        this['likes'] = likes;
+        this['dislikesList'] = dislikesList;
+        this['likesList'] = likesList;
         this['category'] = category;
         this['author'] = author;
         
@@ -77,17 +76,17 @@ export default class Article {
             if (data.hasOwnProperty('updatedAt')) {
                 obj['updatedAt'] = ApiClient.convertToType(data['updatedAt'], 'String');
             }
-            if (data.hasOwnProperty('dislikes')) {
-                obj['dislikes'] = ApiClient.convertToType(data['dislikes'], 'Number');
+            if (data.hasOwnProperty('dislikesList')) {
+                obj['dislikesList'] = ApiClient.convertToType(data['dislikesList'], ['String']);
             }
-            if (data.hasOwnProperty('likes')) {
-                obj['likes'] = ApiClient.convertToType(data['likes'], 'Number');
+            if (data.hasOwnProperty('likesList')) {
+                obj['likesList'] = ApiClient.convertToType(data['likesList'], ['String']);
             }
             if (data.hasOwnProperty('category')) {
-                obj['category'] = ApiClient.convertToType(data['category'], );
+                obj['category'] = ApiClient.convertToType(data['category'], ModelObject);
             }
             if (data.hasOwnProperty('author')) {
-                obj['author'] = ApiClient.convertToType(data['author'], );
+                obj['author'] = ApiClient.convertToType(data['author'], ModelObject);
             }
         }
         return obj;
@@ -97,45 +96,45 @@ export default class Article {
     * Id of the article
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * Title of the article
     * @member {String} title
     */
-    title = undefined;
+    'title' = undefined;
     /**
     * Content of the article
     * @member {String} content
     */
-    content = undefined;
+    'content' = undefined;
     /**
     * Creation date of the article
     * @member {String} createdAt
     */
-    createdAt = undefined;
+    'createdAt' = undefined;
     /**
     * Update date of the article
     * @member {String} updatedAt
     */
-    updatedAt = undefined;
+    'updatedAt' = undefined;
     /**
-    * Number of dislikes
-    * @member {Number} dislikes
+    * List of dislikes' authors ids
+    * @member {Array.<String>} dislikesList
     */
-    dislikes = undefined;
+    'dislikesList' = undefined;
     /**
-    * Number of likes
-    * @member {Number} likes
+    * List of likes' authors ids
+    * @member {Array.<String>} likesList
     */
-    likes = undefined;
+    'likesList' = undefined;
     /**
     * @member {} category
     */
-    category = undefined;
+    'category' = undefined;
     /**
     * @member {} author
     */
-    author = undefined;
+    'author' = undefined;
 
 
 

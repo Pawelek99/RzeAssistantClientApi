@@ -61,12 +61,12 @@ export default class Theme {
     * ID of the theme entity
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * Name of the theme
     * @member {String} name
     */
-    name = undefined;
+    'name' = undefined;
 
 
 

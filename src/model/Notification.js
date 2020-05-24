@@ -13,7 +13,6 @@
 
 import ApiClient from '../ApiClient';
 
-
 /**
 * The Notification model module.
 * @module model/Notification
@@ -64,10 +63,10 @@ export default class Notification {
                 obj['createdAt'] = ApiClient.convertToType(data['createdAt'], 'String');
             }
             if (data.hasOwnProperty('sender')) {
-                obj['sender'] = ApiClient.convertToType(data['sender'], );
+                obj['sender'] = ApiClient.convertToType(data['sender'], ModelObject);
             }
             if (data.hasOwnProperty('recipient')) {
-                obj['recipient'] = ApiClient.convertToType(data['recipient'], );
+                obj['recipient'] = ApiClient.convertToType(data['recipient'], ModelObject);
             }
         }
         return obj;
@@ -77,25 +76,25 @@ export default class Notification {
     * This is id
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * Content of the notification
     * @member {String} content
     */
-    content = undefined;
+    'content' = undefined;
     /**
     * Creation date of the notification
     * @member {String} createdAt
     */
-    createdAt = undefined;
+    'createdAt' = undefined;
     /**
     * @member {} sender
     */
-    sender = undefined;
+    'sender' = undefined;
     /**
     * @member {} recipient
     */
-    recipient = undefined;
+    'recipient' = undefined;
 
 
 

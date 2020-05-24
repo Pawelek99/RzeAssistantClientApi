@@ -66,17 +66,17 @@ export default class CreateNotificationDto {
     * Content of the notification
     * @member {String} content
     */
-    content = undefined;
+    'content' = undefined;
     /**
     * Id of the notificaton sender
     * @member {String} senderId
     */
-    senderId = undefined;
+    'senderId' = undefined;
     /**
     * Id of the notificaton recipient
     * @member {String} recipientId
     */
-    recipientId = undefined;
+    'recipientId' = undefined;
 
 
 

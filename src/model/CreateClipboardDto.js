@@ -61,12 +61,12 @@ export default class CreateClipboardDto {
     * Id of the user
     * @member {String} userId
     */
-    userId = undefined;
+    'userId' = undefined;
     /**
     * Ids of the articles
     * @member {Array.<String>} articlesIds
     */
-    articlesIds = undefined;
+    'articlesIds' = undefined;
 
 
 

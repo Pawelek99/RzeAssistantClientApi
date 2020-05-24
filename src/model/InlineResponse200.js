@@ -54,7 +54,7 @@ export default class InlineResponse200 {
     * ID of the created entity
     * @member {String} status
     */
-    status = undefined;
+    'status' = undefined;
 
 
 

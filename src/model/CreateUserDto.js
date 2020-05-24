@@ -87,42 +87,42 @@ export default class CreateUserDto {
     * User name
     * @member {String} name
     */
-    name = undefined;
+    'name' = undefined;
     /**
     * User lastname
     * @member {String} lastName
     */
-    lastName = undefined;
+    'lastName' = undefined;
     /**
     * User email adress
     * @member {String} email
     */
-    email = undefined;
+    'email' = undefined;
     /**
     * User password
     * @member {String} passwordHash
     */
-    passwordHash = undefined;
+    'passwordHash' = undefined;
     /**
     * id of role
     * @member {String} roleId
     */
-    roleId = undefined;
+    'roleId' = undefined;
     /**
     * id of interest
     * @member {String} interestId
     */
-    interestId = undefined;
+    'interestId' = undefined;
     /**
     * id of clipboard
     * @member {String} clipboardId
     */
-    clipboardId = undefined;
+    'clipboardId' = undefined;
     /**
     * id of theme
     * @member {String} themeId
     */
-    themeId = undefined;
+    'themeId' = undefined;
 
 
 

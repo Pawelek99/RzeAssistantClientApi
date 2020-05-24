@@ -56,7 +56,7 @@ export default class CreateInterestDto {
     * Name of THE interest
     * @member {String} name
     */
-    name = undefined;
+    'name' = undefined;
 
 
 

@@ -61,12 +61,12 @@ export default class Interest {
     * Like never you saw an id lol
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * Name of THE intrerest ^_^
     * @member {String} name
     */
-    name = undefined;
+    'name' = undefined;
 
 
 

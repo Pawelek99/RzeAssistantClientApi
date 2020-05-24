@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **content** | **String** | Content of the article | 
 **createdAt** | **String** | Creation date of the article | 
 **updatedAt** | **String** | Update date of the article | 
-**dislikes** | **Number** | Number of dislikes | 
-**likes** | **Number** | Number of likes | 
+**dislikesList** | **[String]** | List of dislikes&#x27; authors ids | 
+**likesList** | **[String]** | List of likes&#x27; authors ids | 
 **category** | [**AllOfArticleCategory**](AllOfArticleCategory.md) |  | 
 **author** | [**AllOfArticleAuthor**](AllOfArticleAuthor.md) |  | 

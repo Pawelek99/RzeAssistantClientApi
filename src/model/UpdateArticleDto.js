@@ -60,17 +60,17 @@ export default class UpdateArticleDto {
     * Title of the article
     * @member {String} title
     */
-    title = undefined;
+    'title' = undefined;
     /**
     * Content of the article
     * @member {String} content
     */
-    content = undefined;
+    'content' = undefined;
     /**
     * Id of the category
     * @member {String} categoryId
     */
-    categoryId = undefined;
+    'categoryId' = undefined;
 
 
 

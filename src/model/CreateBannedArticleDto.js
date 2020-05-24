@@ -61,12 +61,12 @@ export default class CreateBannedArticleDto {
     * Reason why article is banned
     * @member {String} reason
     */
-    reason = undefined;
+    'reason' = undefined;
     /**
     * Banned article id
     * @member {String} articleId
     */
-    articleId = undefined;
+    'articleId' = undefined;
 
 
 

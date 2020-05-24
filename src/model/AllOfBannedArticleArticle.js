@@ -14,7 +14,6 @@
 import ApiClient from '../ApiClient';
 import Article from './Article';
 
-
 /**
 * The AllOfBannedArticleArticle model module.
 * @module model/AllOfBannedArticleArticle
@@ -31,14 +30,14 @@ export default class AllOfBannedArticleArticle {
     * @param content {} Content of the article
     * @param createdAt {} Creation date of the article
     * @param updatedAt {} Update date of the article
-    * @param dislikes {} Number of dislikes
-    * @param likes {} Number of likes
+    * @param dislikesList {} List of dislikes' authors ids
+    * @param likesList {} List of likes' authors ids
     * @param category {} 
     * @param author {} 
     */
 
-    constructor(id, title, content, createdAt, updatedAt, dislikes, likes, category, author) {
-        Article.call(this, id, title, content, createdAt, updatedAt, dislikes, likes, category, author);
+    constructor(id, title, content, createdAt, updatedAt, dislikesList, likesList, category, author) {
+        Article.call(this, id, title, content, createdAt, updatedAt, dislikesList, likesList, category, author);
         
         
     }

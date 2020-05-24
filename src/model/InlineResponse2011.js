@@ -54,7 +54,7 @@ export default class InlineResponse2011 {
     * Link of the image
     * @member {String} link
     */
-    link = undefined;
+    'link' = undefined;
 
 
 
