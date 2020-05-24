@@ -56,7 +56,7 @@ export default class UpdateClipboardDto {
     * Id of the article
     * @member {String} articleId
     */
-    articleId = undefined;
+    'articleId' = undefined;
 
 
 

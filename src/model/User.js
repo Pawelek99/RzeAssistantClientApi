@@ -13,7 +13,6 @@
 
 import ApiClient from '../ApiClient';
 
-
 /**
 * The User model module.
 * @module model/User
@@ -74,13 +73,13 @@ export default class User {
                 obj['passwordHash'] = ApiClient.convertToType(data['passwordHash'], 'String');
             }
             if (data.hasOwnProperty('role')) {
-                obj['role'] = ApiClient.convertToType(data['role'], );
+                obj['role'] = ApiClient.convertToType(data['role'], ModelObject);
             }
             if (data.hasOwnProperty('interest')) {
-                obj['interest'] = ApiClient.convertToType(data['interest'], );
+                obj['interest'] = ApiClient.convertToType(data['interest'], ModelObject);
             }
             if (data.hasOwnProperty('theme')) {
-                obj['theme'] = ApiClient.convertToType(data['theme'], );
+                obj['theme'] = ApiClient.convertToType(data['theme'], ModelObject);
             }
         }
         return obj;
@@ -90,39 +89,39 @@ export default class User {
     * ID of the user entity
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * User name
     * @member {String} name
     */
-    name = undefined;
+    'name' = undefined;
     /**
     * User lastname
     * @member {String} lastName
     */
-    lastName = undefined;
+    'lastName' = undefined;
     /**
     * User email adress
     * @member {String} email
     */
-    email = undefined;
+    'email' = undefined;
     /**
     * User password
     * @member {String} passwordHash
     */
-    passwordHash = undefined;
+    'passwordHash' = undefined;
     /**
     * @member {} role
     */
-    role = undefined;
+    'role' = undefined;
     /**
     * @member {} interest
     */
-    interest = undefined;
+    'interest' = undefined;
     /**
     * @member {} theme
     */
-    theme = undefined;
+    'theme' = undefined;
 
 
 

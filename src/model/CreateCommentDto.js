@@ -66,17 +66,17 @@ export default class CreateCommentDto {
     * Id of the commented article
     * @member {String} articleId
     */
-    articleId = undefined;
+    'articleId' = undefined;
     /**
     * Id of the author of the comment
     * @member {String} authorId
     */
-    authorId = undefined;
+    'authorId' = undefined;
     /**
     * Content of the comment
     * @member {String} content
     */
-    content = undefined;
+    'content' = undefined;
 
 
 

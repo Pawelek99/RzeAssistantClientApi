@@ -27,7 +27,7 @@ bearer.apiKey = 'YOUR API KEY';
 //bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.ImagesApi();
-let file = file_example; // Blob | 
+let file = "file_example"; // File | 
 let uploadedBy = "uploadedBy_example"; // String | 
 
 apiInstance.imageControllerCreate(fileuploadedBy, (error, data, response) => {
@@ -43,7 +43,7 @@ apiInstance.imageControllerCreate(fileuploadedBy, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **Blob**|  | 
+ **file** | **File**|  | 
  **uploadedBy** | **String**|  | 
 
 ### Return type
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 <a name="imageControllerFindAllUploadedBy"></a>
 # **imageControllerFindAllUploadedBy**
-> [Image] imageControllerFindAllUploadedBy(id)
+> [InlineResponse2002] imageControllerFindAllUploadedBy(id)
 
 Returns all images by user id
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[Image]**](Image.md)
+[**[InlineResponse2002]**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 <a name="imageDataControllerFindByLink"></a>
 # **imageDataControllerFindByLink**
-> &#x27;Blob&#x27; imageDataControllerFindByLink(id)
+> File imageDataControllerFindByLink(id)
 
 Returns an image
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**&#x27;Blob&#x27;**
+**File**
 
 ### Authorization
 

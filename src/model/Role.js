@@ -61,12 +61,12 @@ export default class Role {
     * Like never you saw an id lol
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * Name of the role simple...
     * @member {String} name
     */
-    name = undefined;
+    'name' = undefined;
 
 
 

@@ -12,8 +12,8 @@
  */
 
 import ApiClient from "../ApiClient";
-import Image from '../model/Image';
 import InlineResponse2001 from '../model/InlineResponse2001';
+import InlineResponse2002 from '../model/InlineResponse2002';
 import InlineResponse2011 from '../model/InlineResponse2011';
 import InlineResponse404 from '../model/InlineResponse404';
 import InlineResponse4044 from '../model/InlineResponse4044';
@@ -78,14 +78,14 @@ export default class ImagesApi {
      * Callback function to receive the result of the imageControllerFindAllUploadedBy operation.
      * @callback module:api/ImagesApi~imageControllerFindAllUploadedByCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/Image>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse2002>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Returns all images by user id
      * @param {module:api/ImagesApi~imageControllerFindAllUploadedByCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/Image>}
+     * data is of type: {@link Array.<module:model/InlineResponse2002>}
      */
     imageControllerFindAllUploadedBy(id, callback) {
       let postBody = null;
@@ -103,7 +103,7 @@ export default class ImagesApi {
       let authNames = ['bearer'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = [Image];
+      let returnType = [InlineResponse2002];
 
       return this.apiClient.callApi(
         '/api/v1/images/user/{id}', 'GET',
@@ -152,14 +152,14 @@ export default class ImagesApi {
      * Callback function to receive the result of the imageDataControllerFindByLink operation.
      * @callback module:api/ImagesApi~imageDataControllerFindByLinkCallback
      * @param {String} error Error message, if any.
-     * @param {'Blob'} data The data returned by the service call.
+     * @param {File} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Returns an image
      * @param {module:api/ImagesApi~imageDataControllerFindByLinkCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link 'Blob'}
+     * data is of type: {@link File}
      */
     imageDataControllerFindByLink(id, callback) {
       let postBody = null;
@@ -177,7 +177,7 @@ export default class ImagesApi {
       let authNames = [];
       let contentTypes = [];
       let accepts = ['image/_*', 'application/json'];
-      let returnType = 'Blob';
+      let returnType = File;
 
       return this.apiClient.callApi(
         '/files/images/{id}', 'GET',

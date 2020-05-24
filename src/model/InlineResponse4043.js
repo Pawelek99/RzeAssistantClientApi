@@ -13,7 +13,6 @@
 
 import ApiClient from '../ApiClient';
 
-
 /**
 * The InlineResponse4043 model module.
 * @module model/InlineResponse4043
@@ -45,7 +44,7 @@ export default class InlineResponse4043 {
                         
             
             if (data.hasOwnProperty('oneOf')) {
-                obj['oneOf'] = ApiClient.convertToType(data['oneOf'], );
+                obj['oneOf'] = ApiClient.convertToType(data['oneOf'], ModelObject);
             }
         }
         return obj;
@@ -54,7 +53,7 @@ export default class InlineResponse4043 {
     /**
     * @member {} oneOf
     */
-    oneOf = undefined;
+    'oneOf' = undefined;
 
 
 

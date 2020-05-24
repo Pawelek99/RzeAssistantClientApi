@@ -19,7 +19,6 @@ import AllOfBannedUserUser from './model/AllOfBannedUserUser';
 import AllOfClipboardUser from './model/AllOfClipboardUser';
 import AllOfCommentArticle from './model/AllOfCommentArticle';
 import AllOfCommentAuthor from './model/AllOfCommentAuthor';
-import AllOfImageUploadedBy from './model/AllOfImageUploadedBy';
 import AllOfNotificationRecipient from './model/AllOfNotificationRecipient';
 import AllOfNotificationSender from './model/AllOfNotificationSender';
 import AllOfUserInterest from './model/AllOfUserInterest';
@@ -40,9 +39,9 @@ import CreateCommentDto from './model/CreateCommentDto';
 import CreateInterestDto from './model/CreateInterestDto';
 import CreateNotificationDto from './model/CreateNotificationDto';
 import CreateUserDto from './model/CreateUserDto';
-import Image from './model/Image';
 import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
+import InlineResponse2002 from './model/InlineResponse2002';
 import InlineResponse201 from './model/InlineResponse201';
 import InlineResponse2011 from './model/InlineResponse2011';
 import InlineResponse404 from './model/InlineResponse404';
@@ -157,12 +156,6 @@ export {
      * @property {module:model/AllOfCommentAuthor}
      */
     AllOfCommentAuthor,
-
-    /**
-     * The AllOfImageUploadedBy model constructor.
-     * @property {module:model/AllOfImageUploadedBy}
-     */
-    AllOfImageUploadedBy,
 
     /**
      * The AllOfNotificationRecipient model constructor.
@@ -285,12 +278,6 @@ export {
     CreateUserDto,
 
     /**
-     * The Image model constructor.
-     * @property {module:model/Image}
-     */
-    Image,
-
-    /**
      * The InlineResponse200 model constructor.
      * @property {module:model/InlineResponse200}
      */
@@ -301,6 +288,12 @@ export {
      * @property {module:model/InlineResponse2001}
      */
     InlineResponse2001,
+
+    /**
+     * The InlineResponse2002 model constructor.
+     * @property {module:model/InlineResponse2002}
+     */
+    InlineResponse2002,
 
     /**
      * The InlineResponse201 model constructor.

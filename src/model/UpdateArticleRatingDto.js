@@ -24,12 +24,14 @@ export default class UpdateArticleRatingDto {
     * @alias module:model/UpdateArticleRatingDto
     * @class
     * @param increase {Boolean} Indicates if the operation should increase or decrease counter
+    * @param authorId {String} Id of the Author of the rating
     */
 
-    constructor(increase) {
+    constructor(increase, authorId) {
         
         
         this['increase'] = increase;
+        this['authorId'] = authorId;
         
     }
 
@@ -48,6 +50,9 @@ export default class UpdateArticleRatingDto {
             if (data.hasOwnProperty('increase')) {
                 obj['increase'] = ApiClient.convertToType(data['increase'], 'Boolean');
             }
+            if (data.hasOwnProperty('authorId')) {
+                obj['authorId'] = ApiClient.convertToType(data['authorId'], 'String');
+            }
         }
         return obj;
     }
@@ -56,7 +61,12 @@ export default class UpdateArticleRatingDto {
     * Indicates if the operation should increase or decrease counter
     * @member {Boolean} increase
     */
-    increase = undefined;
+    'increase' = undefined;
+    /**
+    * Id of the Author of the rating
+    * @member {String} authorId
+    */
+    'authorId' = undefined;
 
 
 

@@ -66,17 +66,17 @@ export default class CreateCategoryDto {
     * Name of the category
     * @member {String} name
     */
-    name = undefined;
+    'name' = undefined;
     /**
     * Color of the category in hex
     * @member {String} color
     */
-    color = undefined;
+    'color' = undefined;
     /**
     * Icon of the category
     * @member {String} icon
     */
-    icon = undefined;
+    'icon' = undefined;
 
 
 

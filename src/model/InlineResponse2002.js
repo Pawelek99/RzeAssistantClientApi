@@ -14,14 +14,14 @@
 import ApiClient from '../ApiClient';
 
 /**
-* The InlineResponse4044 model module.
-* @module model/InlineResponse4044
+* The InlineResponse2002 model module.
+* @module model/InlineResponse2002
 * @version 0.0.1
 */
-export default class InlineResponse4044 {
+export default class InlineResponse2002 {
     /**
-    * Constructs a new <code>InlineResponse4044</code>.
-    * @alias module:model/InlineResponse4044
+    * Constructs a new <code>InlineResponse2002</code>.
+    * @alias module:model/InlineResponse2002
     * @class
     */
 
@@ -32,29 +32,29 @@ export default class InlineResponse4044 {
     }
 
     /**
-    * Constructs a <code>InlineResponse4044</code> from a plain JavaScript object, optionally creating a new instance.
+    * Constructs a <code>InlineResponse2002</code> from a plain JavaScript object, optionally creating a new instance.
     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
     * @param {Object} data The plain JavaScript object bearing properties of interest.
-    * @param {module:model/InlineResponse4044} obj Optional instance to populate.
-    * @return {module:model/InlineResponse4044} The populated <code>InlineResponse4044</code> instance.
+    * @param {module:model/InlineResponse2002} obj Optional instance to populate.
+    * @return {module:model/InlineResponse2002} The populated <code>InlineResponse2002</code> instance.
     */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new InlineResponse4044();
+            obj = obj || new InlineResponse2002();
                         
             
-            if (data.hasOwnProperty('status')) {
-                obj['status'] = ApiClient.convertToType(data['status'], 'String');
+            if (data.hasOwnProperty('link')) {
+                obj['link'] = ApiClient.convertToType(data['link'], 'String');
             }
         }
         return obj;
     }
 
     /**
-    * Status of the action
-    * @member {String} status
+    * Path to the image
+    * @member {String} link
     */
-    'status' = undefined;
+    'link' = undefined;
 
 
 

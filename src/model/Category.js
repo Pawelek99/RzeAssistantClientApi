@@ -71,22 +71,22 @@ export default class Category {
     * Id of the category
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * Name of the category
     * @member {String} name
     */
-    name = undefined;
+    'name' = undefined;
     /**
     * Color of the category in hex
     * @member {String} color
     */
-    color = undefined;
+    'color' = undefined;
     /**
     * Icon of the category
     * @member {String} icon
     */
-    icon = undefined;
+    'icon' = undefined;
 
 
 

@@ -13,7 +13,6 @@
 
 import ApiClient from '../ApiClient';
 
-
 /**
 * The BannedUser model module.
 * @module model/BannedUser
@@ -62,7 +61,7 @@ export default class BannedUser {
                 obj['reason'] = ApiClient.convertToType(data['reason'], 'String');
             }
             if (data.hasOwnProperty('user')) {
-                obj['user'] = ApiClient.convertToType(data['user'], );
+                obj['user'] = ApiClient.convertToType(data['user'], ModelObject);
             }
         }
         return obj;
@@ -72,21 +71,21 @@ export default class BannedUser {
     * Id of the banned user
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * Date when user got banned
     * @member {String} bannedAt
     */
-    bannedAt = undefined;
+    'bannedAt' = undefined;
     /**
     * Reason why user is banned
     * @member {String} reason
     */
-    reason = undefined;
+    'reason' = undefined;
     /**
     * @member {} user
     */
-    user = undefined;
+    'user' = undefined;
 
 
 

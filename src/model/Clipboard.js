@@ -13,7 +13,6 @@
 
 import ApiClient from '../ApiClient';
 
-
 /**
 * The Clipboard model module.
 * @module model/Clipboard
@@ -54,7 +53,7 @@ export default class Clipboard {
                 obj['id'] = ApiClient.convertToType(data['id'], 'String');
             }
             if (data.hasOwnProperty('user')) {
-                obj['user'] = ApiClient.convertToType(data['user'], );
+                obj['user'] = ApiClient.convertToType(data['user'], ModelObject);
             }
             if (data.hasOwnProperty('articles')) {
                 obj['articles'] = ApiClient.convertToType(data['articles'], ['String']);
@@ -67,16 +66,16 @@ export default class Clipboard {
     * Id of the clipboard
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * @member {} user
     */
-    user = undefined;
+    'user' = undefined;
     /**
     * Articles in Clipboard
     * @member {Array.<String>} articles
     */
-    articles = undefined;
+    'articles' = undefined;
 
 
 

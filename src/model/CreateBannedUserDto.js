@@ -61,12 +61,12 @@ export default class CreateBannedUserDto {
     * Reason why user is banned
     * @member {String} reason
     */
-    reason = undefined;
+    'reason' = undefined;
     /**
     * Banned user id
     * @member {String} userId
     */
-    userId = undefined;
+    'userId' = undefined;
 
 
 

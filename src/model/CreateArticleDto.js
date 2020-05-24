@@ -69,22 +69,22 @@ export default class CreateArticleDto {
     * Title of the article
     * @member {String} title
     */
-    title = undefined;
+    'title' = undefined;
     /**
     * Content of the article
     * @member {String} content
     */
-    content = undefined;
+    'content' = undefined;
     /**
     * Id of the author of the article
     * @member {String} authorId
     */
-    authorId = undefined;
+    'authorId' = undefined;
     /**
     * Id of the category
     * @member {String} categoryId
     */
-    categoryId = undefined;
+    'categoryId' = undefined;
 
 
 

@@ -13,7 +13,6 @@
 
 import ApiClient from '../ApiClient';
 
-
 /**
 * The Comment model module.
 * @module model/Comment
@@ -64,10 +63,10 @@ export default class Comment {
                 obj['createdAt'] = ApiClient.convertToType(data['createdAt'], 'String');
             }
             if (data.hasOwnProperty('article')) {
-                obj['article'] = ApiClient.convertToType(data['article'], );
+                obj['article'] = ApiClient.convertToType(data['article'], ModelObject);
             }
             if (data.hasOwnProperty('author')) {
-                obj['author'] = ApiClient.convertToType(data['author'], );
+                obj['author'] = ApiClient.convertToType(data['author'], ModelObject);
             }
         }
         return obj;
@@ -77,25 +76,25 @@ export default class Comment {
     * Id of the comment
     * @member {String} id
     */
-    id = undefined;
+    'id' = undefined;
     /**
     * Content of the comment
     * @member {String} content
     */
-    content = undefined;
+    'content' = undefined;
     /**
     * Creation date of the comment
     * @member {String} createdAt
     */
-    createdAt = undefined;
+    'createdAt' = undefined;
     /**
     * @member {} article
     */
-    article = undefined;
+    'article' = undefined;
     /**
     * @member {} author
     */
-    author = undefined;
+    'author' = undefined;
 
 
 
