@@ -61,7 +61,7 @@ export default class BannedArticle {
                 obj['reason'] = ApiClient.convertToType(data['reason'], 'String');
             }
             if (data.hasOwnProperty('article')) {
-                obj['article'] = ApiClient.convertToType(data['article'], ModelObject);
+                obj['article'] = ApiClient.convertToType(data['article'], Object);
             }
         }
         return obj;

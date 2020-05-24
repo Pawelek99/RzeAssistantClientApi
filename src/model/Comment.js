@@ -63,10 +63,10 @@ export default class Comment {
                 obj['createdAt'] = ApiClient.convertToType(data['createdAt'], 'String');
             }
             if (data.hasOwnProperty('article')) {
-                obj['article'] = ApiClient.convertToType(data['article'], ModelObject);
+                obj['article'] = ApiClient.convertToType(data['article'], Object);
             }
             if (data.hasOwnProperty('author')) {
-                obj['author'] = ApiClient.convertToType(data['author'], ModelObject);
+                obj['author'] = ApiClient.convertToType(data['author'], Object);
             }
         }
         return obj;

@@ -61,7 +61,7 @@ export default class BannedUser {
                 obj['reason'] = ApiClient.convertToType(data['reason'], 'String');
             }
             if (data.hasOwnProperty('user')) {
-                obj['user'] = ApiClient.convertToType(data['user'], ModelObject);
+                obj['user'] = ApiClient.convertToType(data['user'], Object);
             }
         }
         return obj;

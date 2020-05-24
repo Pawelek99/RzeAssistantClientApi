@@ -44,7 +44,7 @@ export default class InlineResponse4046 {
                         
             
             if (data.hasOwnProperty('oneOf')) {
-                obj['oneOf'] = ApiClient.convertToType(data['oneOf'], ModelObject);
+                obj['oneOf'] = ApiClient.convertToType(data['oneOf'], Object);
             }
         }
         return obj;
