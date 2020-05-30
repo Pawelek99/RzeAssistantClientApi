@@ -1,19 +1,22 @@
 # KnowYourPlaceApi.UsersApi
 
-All URIs are relative to */*
+All URIs are relative to _/_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**userControllerCreate**](UsersApi.md#userControllerCreate) | **POST** /api/v1/users | Creates new user
-[**userControllerFindById**](UsersApi.md#userControllerFindById) | **GET** /api/v1/users/{id} | Returns user details by id
+| Method                                                           | HTTP request               | Description                |
+| ---------------------------------------------------------------- | -------------------------- | -------------------------- |
+| [**userControllerCreate**](UsersApi.md#userControllerCreate)     | **POST** /api/v1/users     | Creates new user           |
+| [**userControllerFindById**](UsersApi.md#userControllerFindById) | **GET** /api/v1/users/{id} | Returns user details by id |
 
 <a name="userControllerCreate"></a>
+
 # **userControllerCreate**
+
 > InlineResponse200 userControllerCreate(body)
 
 Creates new user
 
 ### Example
+
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
 let defaultClient = KnowYourPlaceApi.ApiClient.instance;
@@ -25,22 +28,22 @@ bearer.apiKey = 'YOUR API KEY';
 //bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.UsersApi();
-let body = new KnowYourPlaceApi.CreateUserDto(); // CreateUserDto | 
+let body = new KnowYourPlaceApi.CreateUserDto(); // CreateUserDto |
 
 apiInstance.userControllerCreate(body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+	if (error) {
+		console.error(error);
+	} else {
+		console.log('API called successfully. Returned data: ' + data);
+	}
 });
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**CreateUserDto**](CreateUserDto.md)|  | 
+| Name     | Type                                  | Description | Notes |
+| -------- | ------------------------------------- | ----------- | ----- |
+| **body** | [**CreateUserDto**](CreateUserDto.md) |             |
 
 ### Return type
 
@@ -52,16 +55,19 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 <a name="userControllerFindById"></a>
+
 # **userControllerFindById**
+
 > User userControllerFindById(id)
 
 Returns user details by id
 
 ### Example
+
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
 let defaultClient = KnowYourPlaceApi.ApiClient.instance;
@@ -73,22 +79,22 @@ bearer.apiKey = 'YOUR API KEY';
 //bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.UsersApi();
-let id = "id_example"; // String | 
+let id = 'id_example'; // String |
 
 apiInstance.userControllerFindById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+	if (error) {
+		console.error(error);
+	} else {
+		console.log('API called successfully. Returned data: ' + data);
+	}
 });
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
+| Name   | Type       | Description | Notes |
+| ------ | ---------- | ----------- | ----- |
+| **id** | **String** |             |
 
 ### Return type
 
@@ -100,6 +106,5 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json

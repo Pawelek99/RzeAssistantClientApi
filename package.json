@@ -1,6 +1,6 @@
 {
 	"name": "rzeassistant_client_api",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"description": "RzeAssistant API client",
 	"license": "ISC",
 	"main": "distribution/index.js",
@@ -37,5 +37,12 @@
 				}
 			]
 		]
+	},
+	"prettier": {
+		"trailingComma": "es5",
+		"tabWidth": 2,
+		"semi": true,
+		"singleQuote": true,
+		"useTabs": true
 	}
 }

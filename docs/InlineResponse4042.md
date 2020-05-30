@@ -2,6 +2,6 @@
 
 ## Properties
 
-| Name      | Type                    | Description | Notes      |
-| --------- | ----------------------- | ----------- | ---------- |
-| **oneOf** | [**Object**](Object.md) |             | [optional] |
+| Name      | Type                              | Description | Notes      |
+| --------- | --------------------------------- | ----------- | ---------- |
+| **oneOf** | [**ModelObject**](ModelObject.md) |             | [optional] |

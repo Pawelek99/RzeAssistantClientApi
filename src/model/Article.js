@@ -32,9 +32,21 @@ export default class Article {
 	 * @param likesList {Array.<String>} List of likes' authors ids
 	 * @param category {}
 	 * @param author {}
+	 * @param coverImage {String} Cover image link of the article
 	 */
 
-	constructor(id, title, content, createdAt, updatedAt, dislikesList, likesList, category, author) {
+	constructor(
+		id,
+		title,
+		content,
+		createdAt,
+		updatedAt,
+		dislikesList,
+		likesList,
+		category,
+		author,
+		coverImage
+	) {
 		this['id'] = id;
 		this['title'] = title;
 		this['content'] = content;
@@ -44,6 +56,7 @@ export default class Article {
 		this['likesList'] = likesList;
 		this['category'] = category;
 		this['author'] = author;
+		this['coverImage'] = coverImage;
 	}
 
 	/**
@@ -73,16 +86,26 @@ export default class Article {
 				obj['updatedAt'] = ApiClient.convertToType(data['updatedAt'], 'String');
 			}
 			if (data.hasOwnProperty('dislikesList')) {
-				obj['dislikesList'] = ApiClient.convertToType(data['dislikesList'], ['String']);
+				obj['dislikesList'] = ApiClient.convertToType(data['dislikesList'], [
+					'String',
+				]);
 			}
 			if (data.hasOwnProperty('likesList')) {
-				obj['likesList'] = ApiClient.convertToType(data['likesList'], ['String']);
+				obj['likesList'] = ApiClient.convertToType(data['likesList'], [
+					'String',
+				]);
 			}
 			if (data.hasOwnProperty('category')) {
 				obj['category'] = ApiClient.convertToType(data['category'], Object);
 			}
 			if (data.hasOwnProperty('author')) {
 				obj['author'] = ApiClient.convertToType(data['author'], Object);
+			}
+			if (data.hasOwnProperty('coverImage')) {
+				obj['coverImage'] = ApiClient.convertToType(
+					data['coverImage'],
+					'String'
+				);
 			}
 		}
 		return obj;
@@ -131,4 +154,9 @@ export default class Article {
 	 * @member {} author
 	 */
 	author = undefined;
+	/**
+	 * Cover image link of the article
+	 * @member {String} coverImage
+	 */
+	coverImage = undefined;
 }
