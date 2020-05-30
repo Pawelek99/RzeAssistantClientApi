@@ -34,9 +34,21 @@ export default class AllOfBannedArticleArticle {
 	 * @param likesList {} List of likes' authors ids
 	 * @param category {}
 	 * @param author {}
+	 * @param coverImage {} Cover image link of the article
 	 */
 
-	constructor(id, title, content, createdAt, updatedAt, dislikesList, likesList, category, author) {
+	constructor(
+		id,
+		title,
+		content,
+		createdAt,
+		updatedAt,
+		dislikesList,
+		likesList,
+		category,
+		author,
+		coverImage
+	) {
 		Article.call(
 			this,
 			id,
@@ -48,6 +60,7 @@ export default class AllOfBannedArticleArticle {
 			likesList,
 			category,
 			author,
+			coverImage
 		);
 	}
 

@@ -1,6 +1,7 @@
 # KnowYourPlaceApi.CreateInterestDto
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **String** | Name of THE interest | 
+
+| Name     | Type       | Description          | Notes |
+| -------- | ---------- | -------------------- | ----- |
+| **name** | **String** | Name of THE interest |

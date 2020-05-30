@@ -1,5 +1,7 @@
 # KnowYourPlaceApi.AllOfArticleCategory
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+

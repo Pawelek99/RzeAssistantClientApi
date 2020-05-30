@@ -1,19 +1,22 @@
 # KnowYourPlaceApi.InterestsApi
 
-All URIs are relative to */*
+All URIs are relative to _/_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**interestControllerCreate**](InterestsApi.md#interestControllerCreate) | **POST** /api/v1/interests | Creates a new interest
-[**interestControllerFindAll**](InterestsApi.md#interestControllerFindAll) | **GET** /api/v1/interests | Returns all interests
+| Method                                                                     | HTTP request               | Description            |
+| -------------------------------------------------------------------------- | -------------------------- | ---------------------- |
+| [**interestControllerCreate**](InterestsApi.md#interestControllerCreate)   | **POST** /api/v1/interests | Creates a new interest |
+| [**interestControllerFindAll**](InterestsApi.md#interestControllerFindAll) | **GET** /api/v1/interests  | Returns all interests  |
 
 <a name="interestControllerCreate"></a>
+
 # **interestControllerCreate**
+
 > InlineResponse201 interestControllerCreate(body)
 
 Creates a new interest
 
 ### Example
+
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
 let defaultClient = KnowYourPlaceApi.ApiClient.instance;
@@ -25,22 +28,22 @@ bearer.apiKey = 'YOUR API KEY';
 //bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.InterestsApi();
-let body = new KnowYourPlaceApi.CreateInterestDto(); // CreateInterestDto | 
+let body = new KnowYourPlaceApi.CreateInterestDto(); // CreateInterestDto |
 
 apiInstance.interestControllerCreate(body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+	if (error) {
+		console.error(error);
+	} else {
+		console.log('API called successfully. Returned data: ' + data);
+	}
 });
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**CreateInterestDto**](CreateInterestDto.md)|  | 
+| Name     | Type                                          | Description | Notes |
+| -------- | --------------------------------------------- | ----------- | ----- |
+| **body** | [**CreateInterestDto**](CreateInterestDto.md) |             |
 
 ### Return type
 
@@ -52,16 +55,19 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 <a name="interestControllerFindAll"></a>
+
 # **interestControllerFindAll**
+
 > [Interest] interestControllerFindAll()
 
 Returns all interests
 
 ### Example
+
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
 let defaultClient = KnowYourPlaceApi.ApiClient.instance;
@@ -74,15 +80,16 @@ bearer.apiKey = 'YOUR API KEY';
 
 let apiInstance = new KnowYourPlaceApi.InterestsApi();
 apiInstance.interestControllerFindAll((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+	if (error) {
+		console.error(error);
+	} else {
+		console.log('API called successfully. Returned data: ' + data);
+	}
 });
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -95,6 +102,5 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json

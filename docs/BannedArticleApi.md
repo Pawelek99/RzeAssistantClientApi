@@ -1,19 +1,22 @@
 # KnowYourPlaceApi.BannedArticleApi
 
-All URIs are relative to */*
+All URIs are relative to _/_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**bannedArticleControllerBanArticle**](BannedArticleApi.md#bannedArticleControllerBanArticle) | **POST** /api/v1/bannedArticle | Creates a new banned article
-[**bannedArticleControllerFindBannedArticle**](BannedArticleApi.md#bannedArticleControllerFindBannedArticle) | **GET** /api/v1/bannedArticle/{id} | Returns banned article details
+| Method                                                                                                       | HTTP request                       | Description                    |
+| ------------------------------------------------------------------------------------------------------------ | ---------------------------------- | ------------------------------ |
+| [**bannedArticleControllerBanArticle**](BannedArticleApi.md#bannedArticleControllerBanArticle)               | **POST** /api/v1/bannedArticle     | Creates a new banned article   |
+| [**bannedArticleControllerFindBannedArticle**](BannedArticleApi.md#bannedArticleControllerFindBannedArticle) | **GET** /api/v1/bannedArticle/{id} | Returns banned article details |
 
 <a name="bannedArticleControllerBanArticle"></a>
+
 # **bannedArticleControllerBanArticle**
+
 > InlineResponse201 bannedArticleControllerBanArticle(body)
 
 Creates a new banned article
 
 ### Example
+
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
 let defaultClient = KnowYourPlaceApi.ApiClient.instance;
@@ -25,22 +28,22 @@ bearer.apiKey = 'YOUR API KEY';
 //bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.BannedArticleApi();
-let body = new KnowYourPlaceApi.CreateBannedArticleDto(); // CreateBannedArticleDto | 
+let body = new KnowYourPlaceApi.CreateBannedArticleDto(); // CreateBannedArticleDto |
 
 apiInstance.bannedArticleControllerBanArticle(body, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+	if (error) {
+		console.error(error);
+	} else {
+		console.log('API called successfully. Returned data: ' + data);
+	}
 });
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**CreateBannedArticleDto**](CreateBannedArticleDto.md)|  | 
+| Name     | Type                                                    | Description | Notes |
+| -------- | ------------------------------------------------------- | ----------- | ----- |
+| **body** | [**CreateBannedArticleDto**](CreateBannedArticleDto.md) |             |
 
 ### Return type
 
@@ -52,16 +55,19 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 <a name="bannedArticleControllerFindBannedArticle"></a>
+
 # **bannedArticleControllerFindBannedArticle**
+
 > BannedArticle bannedArticleControllerFindBannedArticle(id)
 
 Returns banned article details
 
 ### Example
+
 ```javascript
 import KnowYourPlaceApi from 'know_your_place_api';
 let defaultClient = KnowYourPlaceApi.ApiClient.instance;
@@ -73,22 +79,25 @@ bearer.apiKey = 'YOUR API KEY';
 //bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.BannedArticleApi();
-let id = "id_example"; // String | 
+let id = 'id_example'; // String |
 
-apiInstance.bannedArticleControllerFindBannedArticle(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
+apiInstance.bannedArticleControllerFindBannedArticle(
+	id,
+	(error, data, response) => {
+		if (error) {
+			console.error(error);
+		} else {
+			console.log('API called successfully. Returned data: ' + data);
+		}
+	}
+);
 ```
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
+| Name   | Type       | Description | Notes |
+| ------ | ---------- | ----------- | ----- |
+| **id** | **String** |             |
 
 ### Return type
 
@@ -100,6 +109,5 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
+- **Content-Type**: Not defined
+- **Accept**: application/json

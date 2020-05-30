@@ -66,7 +66,10 @@ export default class User {
 				obj['email'] = ApiClient.convertToType(data['email'], 'String');
 			}
 			if (data.hasOwnProperty('passwordHash')) {
-				obj['passwordHash'] = ApiClient.convertToType(data['passwordHash'], 'String');
+				obj['passwordHash'] = ApiClient.convertToType(
+					data['passwordHash'],
+					'String'
+				);
 			}
 			if (data.hasOwnProperty('role')) {
 				obj['role'] = ApiClient.convertToType(data['role'], Object);
