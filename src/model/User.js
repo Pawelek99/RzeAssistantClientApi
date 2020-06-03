@@ -75,7 +75,10 @@ export default class User {
 				obj['role'] = ApiClient.convertToType(data['role'], Object);
 			}
 			if (data.hasOwnProperty('interest')) {
-				obj['interest'] = ApiClient.convertToType(data['interest'], Object);
+				obj['interest'] = ApiClient.convertToType(
+					data['interest'],
+					Object
+				);
 			}
 			if (data.hasOwnProperty('theme')) {
 				obj['theme'] = ApiClient.convertToType(data['theme'], Object);

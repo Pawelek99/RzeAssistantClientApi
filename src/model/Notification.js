@@ -62,7 +62,10 @@ export default class Notification {
 				obj['sender'] = ApiClient.convertToType(data['sender'], Object);
 			}
 			if (data.hasOwnProperty('recipient')) {
-				obj['recipient'] = ApiClient.convertToType(data['recipient'], Object);
+				obj['recipient'] = ApiClient.convertToType(
+					data['recipient'],
+					Object
+				);
 			}
 		}
 		return obj;

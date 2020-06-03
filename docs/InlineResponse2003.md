@@ -1,4 +1,4 @@
-# KnowYourPlaceApi.InlineResponse40410
+# KnowYourPlaceApi.InlineResponse2003
 
 ## Properties
 

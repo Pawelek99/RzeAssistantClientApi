@@ -38,16 +38,15 @@ export default class InlineResponse40412 {
 		if (data) {
 			obj = obj || new InlineResponse40412();
 
-			if (data.hasOwnProperty('status')) {
-				obj['status'] = ApiClient.convertToType(data['status'], 'String');
+			if (data.hasOwnProperty('oneOf')) {
+				obj['oneOf'] = ApiClient.convertToType(data['oneOf'], Object);
 			}
 		}
 		return obj;
 	}
 
 	/**
-	 * Status of the action
-	 * @member {String} status
+	 * @member {} oneOf
 	 */
-	status = undefined;
+	oneOf = undefined;
 }

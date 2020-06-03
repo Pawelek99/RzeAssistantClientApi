@@ -16,8 +16,8 @@ import Comment from '../model/Comment';
 import CreateCommentDto from '../model/CreateCommentDto';
 import InlineResponse201 from '../model/InlineResponse201';
 import InlineResponse4044 from '../model/InlineResponse4044';
-import InlineResponse4047 from '../model/InlineResponse4047';
 import InlineResponse4048 from '../model/InlineResponse4048';
+import InlineResponse4049 from '../model/InlineResponse4049';
 
 /**
  * Comments service.

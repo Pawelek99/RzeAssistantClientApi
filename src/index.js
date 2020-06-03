@@ -16,6 +16,7 @@ import AllOfArticleAuthor from './model/AllOfArticleAuthor';
 import AllOfArticleCategory from './model/AllOfArticleCategory';
 import AllOfBannedArticleArticle from './model/AllOfBannedArticleArticle';
 import AllOfBannedUserUser from './model/AllOfBannedUserUser';
+import AllOfClipboardArticles from './model/AllOfClipboardArticles';
 import AllOfClipboardUser from './model/AllOfClipboardUser';
 import AllOfCommentArticle from './model/AllOfCommentArticle';
 import AllOfCommentAuthor from './model/AllOfCommentAuthor';
@@ -42,6 +43,7 @@ import CreateUserDto from './model/CreateUserDto';
 import InlineResponse200 from './model/InlineResponse200';
 import InlineResponse2001 from './model/InlineResponse2001';
 import InlineResponse2002 from './model/InlineResponse2002';
+import InlineResponse2003 from './model/InlineResponse2003';
 import InlineResponse201 from './model/InlineResponse201';
 import InlineResponse2011 from './model/InlineResponse2011';
 import InlineResponse404 from './model/InlineResponse404';
@@ -49,6 +51,7 @@ import InlineResponse4041 from './model/InlineResponse4041';
 import InlineResponse40410 from './model/InlineResponse40410';
 import InlineResponse40411 from './model/InlineResponse40411';
 import InlineResponse40412 from './model/InlineResponse40412';
+import InlineResponse40413 from './model/InlineResponse40413';
 import InlineResponse4042 from './model/InlineResponse4042';
 import InlineResponse4043 from './model/InlineResponse4043';
 import InlineResponse4044 from './model/InlineResponse4044';
@@ -134,6 +137,11 @@ export {
 	 * @property {module:model/AllOfBannedUserUser}
 	 */
 	AllOfBannedUserUser,
+	/**
+	 * The AllOfClipboardArticles model constructor.
+	 * @property {module:model/AllOfClipboardArticles}
+	 */
+	AllOfClipboardArticles,
 	/**
 	 * The AllOfClipboardUser model constructor.
 	 * @property {module:model/AllOfClipboardUser}
@@ -265,6 +273,11 @@ export {
 	 */
 	InlineResponse2002,
 	/**
+	 * The InlineResponse2003 model constructor.
+	 * @property {module:model/InlineResponse2003}
+	 */
+	InlineResponse2003,
+	/**
 	 * The InlineResponse201 model constructor.
 	 * @property {module:model/InlineResponse201}
 	 */
@@ -299,6 +312,11 @@ export {
 	 * @property {module:model/InlineResponse40412}
 	 */
 	InlineResponse40412,
+	/**
+	 * The InlineResponse40413 model constructor.
+	 * @property {module:model/InlineResponse40413}
+	 */
+	InlineResponse40413,
 	/**
 	 * The InlineResponse4042 model constructor.
 	 * @property {module:model/InlineResponse4042}

@@ -15,10 +15,12 @@ import ApiClient from '../ApiClient';
 import Clipboard from '../model/Clipboard';
 import CreateClipboardDto from '../model/CreateClipboardDto';
 import InlineResponse2001 from '../model/InlineResponse2001';
+import InlineResponse2003 from '../model/InlineResponse2003';
 import InlineResponse201 from '../model/InlineResponse201';
 import InlineResponse404 from '../model/InlineResponse404';
 import InlineResponse4045 from '../model/InlineResponse4045';
 import InlineResponse4046 from '../model/InlineResponse4046';
+import InlineResponse4047 from '../model/InlineResponse4047';
 import UpdateClipboardDto from '../model/UpdateClipboardDto';
 
 /**
@@ -166,6 +168,49 @@ export default class ClipboardsApi {
 		);
 	}
 	/**
+	 * Callback function to receive the result of the clipboardControllerFindClipboardByUserId operation.
+	 * @callback module:api/ClipboardsApi~clipboardControllerFindClipboardByUserIdCallback
+	 * @param {String} error Error message, if any.
+	 * @param {module:model/Clipboard} data The data returned by the service call.
+	 * @param {String} response The complete HTTP response.
+	 */
+
+	/**
+	 * Returns clipboard associated with the given user
+	 * @param {module:api/ClipboardsApi~clipboardControllerFindClipboardByUserIdCallback} callback The callback function, accepting three arguments: error, data, response
+	 * data is of type: {@link module:model/Clipboard}
+	 */
+	clipboardControllerFindClipboardByUserId(id, callback) {
+		let postBody = null;
+
+		let pathParams = {
+			id: id,
+		};
+		let queryParams = {};
+		let headerParams = {};
+		let formParams = {};
+
+		let authNames = ['bearer'];
+		let contentTypes = [];
+		let accepts = ['application/json'];
+		let returnType = Clipboard;
+
+		return this.apiClient.callApi(
+			'/api/v1/clipboards/user/{id}',
+			'GET',
+			pathParams,
+			queryParams,
+			headerParams,
+			formParams,
+			postBody,
+			authNames,
+			contentTypes,
+			accepts,
+			returnType,
+			callback
+		);
+	}
+	/**
 	 * Callback function to receive the result of the clipboardControllerRemoveArticleById operation.
 	 * @callback module:api/ClipboardsApi~clipboardControllerRemoveArticleByIdCallback
 	 * @param {String} error Error message, if any.
@@ -239,6 +284,51 @@ export default class ClipboardsApi {
 		return this.apiClient.callApi(
 			'/api/v1/clipboards/{id}',
 			'DELETE',
+			pathParams,
+			queryParams,
+			headerParams,
+			formParams,
+			postBody,
+			authNames,
+			contentTypes,
+			accepts,
+			returnType,
+			callback
+		);
+	}
+	/**
+	 * Callback function to receive the result of the clipboardControllerUserClipboardContainsArticleId operation.
+	 * @callback module:api/ClipboardsApi~clipboardControllerUserClipboardContainsArticleIdCallback
+	 * @param {String} error Error message, if any.
+	 * @param {module:model/InlineResponse2003} data The data returned by the service call.
+	 * @param {String} response The complete HTTP response.
+	 */
+
+	/**
+	 * Checks if user&#x27;s clipboard contains the given article
+	 * @param {module:api/ClipboardsApi~clipboardControllerUserClipboardContainsArticleIdCallback} callback The callback function, accepting three arguments: error, data, response
+	 * data is of type: {@link module:model/InlineResponse2003}
+	 */
+	clipboardControllerUserClipboardContainsArticleId(id, articleId, callback) {
+		let postBody = null;
+
+		let pathParams = {
+			id: id,
+		};
+		let queryParams = {
+			articleId: articleId,
+		};
+		let headerParams = {};
+		let formParams = {};
+
+		let authNames = ['bearer'];
+		let contentTypes = [];
+		let accepts = ['application/json'];
+		let returnType = InlineResponse2003;
+
+		return this.apiClient.callApi(
+			'/api/v1/clipboards/user/{id}/contains',
+			'GET',
 			pathParams,
 			queryParams,
 			headerParams,

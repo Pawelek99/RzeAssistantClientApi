@@ -14,29 +14,29 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The InlineResponse40410 model module.
- * @module model/InlineResponse40410
+ * The InlineResponse40413 model module.
+ * @module model/InlineResponse40413
  * @version 0.0.1
  */
-export default class InlineResponse40410 {
+export default class InlineResponse40413 {
 	/**
-	 * Constructs a new <code>InlineResponse40410</code>.
-	 * @alias module:model/InlineResponse40410
+	 * Constructs a new <code>InlineResponse40413</code>.
+	 * @alias module:model/InlineResponse40413
 	 * @class
 	 */
 
 	constructor() {}
 
 	/**
-	 * Constructs a <code>InlineResponse40410</code> from a plain JavaScript object, optionally creating a new instance.
+	 * Constructs a <code>InlineResponse40413</code> from a plain JavaScript object, optionally creating a new instance.
 	 * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
 	 * @param {Object} data The plain JavaScript object bearing properties of interest.
-	 * @param {module:model/InlineResponse40410} obj Optional instance to populate.
-	 * @return {module:model/InlineResponse40410} The populated <code>InlineResponse40410</code> instance.
+	 * @param {module:model/InlineResponse40413} obj Optional instance to populate.
+	 * @return {module:model/InlineResponse40413} The populated <code>InlineResponse40413</code> instance.
 	 */
 	static constructFromObject(data, obj) {
 		if (data) {
-			obj = obj || new InlineResponse40410();
+			obj = obj || new InlineResponse40413();
 
 			if (data.hasOwnProperty('status')) {
 				obj['status'] = ApiClient.convertToType(data['status'], 'String');
