@@ -14,8 +14,8 @@
 import ApiClient from '../ApiClient';
 import CreateNotificationDto from '../model/CreateNotificationDto';
 import InlineResponse201 from '../model/InlineResponse201';
-import InlineResponse40411 from '../model/InlineResponse40411';
 import InlineResponse40412 from '../model/InlineResponse40412';
+import InlineResponse40413 from '../model/InlineResponse40413';
 import Notification from '../model/Notification';
 
 /**

@@ -25,7 +25,7 @@ export default class Clipboard {
 	 * @class
 	 * @param id {String} Id of the clipboard
 	 * @param user {}
-	 * @param articles {Array.<String>} Articles in Clipboard
+	 * @param articles {}
 	 */
 
 	constructor(id, user, articles) {
@@ -52,7 +52,10 @@ export default class Clipboard {
 				obj['user'] = ApiClient.convertToType(data['user'], Object);
 			}
 			if (data.hasOwnProperty('articles')) {
-				obj['articles'] = ApiClient.convertToType(data['articles'], ['String']);
+				obj['articles'] = ApiClient.convertToType(
+					data['articles'],
+					Object
+				);
 			}
 		}
 		return obj;
@@ -68,8 +71,7 @@ export default class Clipboard {
 	 */
 	user = undefined;
 	/**
-	 * Articles in Clipboard
-	 * @member {Array.<String>} articles
+	 * @member {} articles
 	 */
 	articles = undefined;
 }

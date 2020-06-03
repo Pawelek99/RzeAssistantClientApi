@@ -17,7 +17,7 @@ import CreateArticleDto from '../model/CreateArticleDto';
 import InlineResponse201 from '../model/InlineResponse201';
 import InlineResponse404 from '../model/InlineResponse404';
 import InlineResponse40410 from '../model/InlineResponse40410';
-import InlineResponse4049 from '../model/InlineResponse4049';
+import InlineResponse40411 from '../model/InlineResponse40411';
 import UpdateArticleDto from '../model/UpdateArticleDto';
 import UpdateArticleRatingDto from '../model/UpdateArticleRatingDto';
 

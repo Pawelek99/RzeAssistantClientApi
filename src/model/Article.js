@@ -96,7 +96,10 @@ export default class Article {
 				]);
 			}
 			if (data.hasOwnProperty('category')) {
-				obj['category'] = ApiClient.convertToType(data['category'], Object);
+				obj['category'] = ApiClient.convertToType(
+					data['category'],
+					Object
+				);
 			}
 			if (data.hasOwnProperty('author')) {
 				obj['author'] = ApiClient.convertToType(data['author'], Object);
