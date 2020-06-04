@@ -2,6 +2,6 @@
 
 ## Properties
 
-| Name       | Type       | Description          | Notes      |
-| ---------- | ---------- | -------------------- | ---------- |
-| **status** | **String** | Status of the action | [optional] |
+| Name      | Type                              | Description | Notes      |
+| --------- | --------------------------------- | ----------- | ---------- |
+| **oneOf** | [**ModelObject**](ModelObject.md) |             | [optional] |
