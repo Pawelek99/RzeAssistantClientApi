@@ -2,11 +2,11 @@
 
 All URIs are relative to _/_
 
-| Method                                                                               | HTTP request                       | Description                           |
-| ------------------------------------------------------------------------------------ | ---------------------------------- | ------------------------------------- |
-| [**userControllerCreate**](UsersApi.md#userControllerCreate)                         | **POST** /api/v1/users             | Creates new user                      |
-| [**userControllerFindById**](UsersApi.md#userControllerFindById)                     | **GET** /api/v1/users/{id}         | Returns user details by id            |
-| [**userControllerFindByPasswordHash**](UsersApi.md#userControllerFindByPasswordHash) | **GET** /api/v1/users/login/{hash} | Returns user details by password hash |
+| Method                                                           | HTTP request                 | Description                           |
+| ---------------------------------------------------------------- | ---------------------------- | ------------------------------------- |
+| [**userControllerCreate**](UsersApi.md#userControllerCreate)     | **POST** /api/v1/users       | Creates new user                      |
+| [**userControllerFindById**](UsersApi.md#userControllerFindById) | **GET** /api/v1/users/{id}   | Returns user details by id            |
+| [**userControllerLogin**](UsersApi.md#userControllerLogin)       | **POST** /api/v1/users/login | Returns user details by password hash |
 
 <a name="userControllerCreate"></a>
 
@@ -110,11 +110,11 @@ apiInstance.userControllerFindById(id, (error, data, response) => {
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-<a name="userControllerFindByPasswordHash"></a>
+<a name="userControllerLogin"></a>
 
-# **userControllerFindByPasswordHash**
+# **userControllerLogin**
 
-> User userControllerFindByPasswordHash(hash)
+> User userControllerLogin(body)
 
 Returns user details by password hash
 
@@ -131,9 +131,9 @@ bearer.apiKey = 'YOUR API KEY';
 //bearer.apiKeyPrefix = 'Token';
 
 let apiInstance = new KnowYourPlaceApi.UsersApi();
-let hash = 'hash_example'; // String |
+let body = new KnowYourPlaceApi.LoginUserDto(); // LoginUserDto |
 
-apiInstance.userControllerFindByPasswordHash(hash, (error, data, response) => {
+apiInstance.userControllerLogin(body, (error, data, response) => {
 	if (error) {
 		console.error(error);
 	} else {
@@ -144,9 +144,9 @@ apiInstance.userControllerFindByPasswordHash(hash, (error, data, response) => {
 
 ### Parameters
 
-| Name     | Type       | Description | Notes |
-| -------- | ---------- | ----------- | ----- |
-| **hash** | **String** |             |
+| Name     | Type                                | Description | Notes |
+| -------- | ----------------------------------- | ----------- | ----- |
+| **body** | [**LoginUserDto**](LoginUserDto.md) |             |
 
 ### Return type
 
@@ -158,5 +158,5 @@ apiInstance.userControllerFindByPasswordHash(hash, (error, data, response) => {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
+- **Content-Type**: application/json
 - **Accept**: application/json

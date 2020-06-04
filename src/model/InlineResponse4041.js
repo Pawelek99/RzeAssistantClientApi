@@ -11,7 +11,7 @@
  *
  */
 
-import ApiClient from '../ApiClient';
+import ApiClient from '../ApiClient';Object
 
 /**
  * The InlineResponse4041 model module.
