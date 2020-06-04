@@ -14,8 +14,8 @@
 import ApiClient from '../ApiClient';
 import CreateUserDto from '../model/CreateUserDto';
 import InlineResponse200 from '../model/InlineResponse200';
-import InlineResponse404 from '../model/InlineResponse404';
 import InlineResponse4043 from '../model/InlineResponse4043';
+import InlineResponse4044 from '../model/InlineResponse4044';
 import User from '../model/User';
 
 /**
@@ -106,6 +106,49 @@ export default class UsersApi {
 
 		return this.apiClient.callApi(
 			'/api/v1/users/{id}',
+			'GET',
+			pathParams,
+			queryParams,
+			headerParams,
+			formParams,
+			postBody,
+			authNames,
+			contentTypes,
+			accepts,
+			returnType,
+			callback
+		);
+	}
+	/**
+	 * Callback function to receive the result of the userControllerFindByPasswordHash operation.
+	 * @callback module:api/UsersApi~userControllerFindByPasswordHashCallback
+	 * @param {String} error Error message, if any.
+	 * @param {module:model/User} data The data returned by the service call.
+	 * @param {String} response The complete HTTP response.
+	 */
+
+	/**
+	 * Returns user details by password hash
+	 * @param {module:api/UsersApi~userControllerFindByPasswordHashCallback} callback The callback function, accepting three arguments: error, data, response
+	 * data is of type: {@link module:model/User}
+	 */
+	userControllerFindByPasswordHash(hash, callback) {
+		let postBody = null;
+
+		let pathParams = {
+			hash: hash,
+		};
+		let queryParams = {};
+		let headerParams = {};
+		let formParams = {};
+
+		let authNames = ['bearer'];
+		let contentTypes = [];
+		let accepts = ['application/json'];
+		let returnType = User;
+
+		return this.apiClient.callApi(
+			'/api/v1/users/login/{hash}',
 			'GET',
 			pathParams,
 			queryParams,

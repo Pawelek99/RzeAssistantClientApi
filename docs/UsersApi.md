@@ -2,10 +2,11 @@
 
 All URIs are relative to _/_
 
-| Method                                                           | HTTP request               | Description                |
-| ---------------------------------------------------------------- | -------------------------- | -------------------------- |
-| [**userControllerCreate**](UsersApi.md#userControllerCreate)     | **POST** /api/v1/users     | Creates new user           |
-| [**userControllerFindById**](UsersApi.md#userControllerFindById) | **GET** /api/v1/users/{id} | Returns user details by id |
+| Method                                                                               | HTTP request                       | Description                           |
+| ------------------------------------------------------------------------------------ | ---------------------------------- | ------------------------------------- |
+| [**userControllerCreate**](UsersApi.md#userControllerCreate)                         | **POST** /api/v1/users             | Creates new user                      |
+| [**userControllerFindById**](UsersApi.md#userControllerFindById)                     | **GET** /api/v1/users/{id}         | Returns user details by id            |
+| [**userControllerFindByPasswordHash**](UsersApi.md#userControllerFindByPasswordHash) | **GET** /api/v1/users/login/{hash} | Returns user details by password hash |
 
 <a name="userControllerCreate"></a>
 
@@ -95,6 +96,57 @@ apiInstance.userControllerFindById(id, (error, data, response) => {
 | Name   | Type       | Description | Notes |
 | ------ | ---------- | ----------- | ----- |
 | **id** | **String** |             |
+
+### Return type
+
+[**User**](User.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+<a name="userControllerFindByPasswordHash"></a>
+
+# **userControllerFindByPasswordHash**
+
+> User userControllerFindByPasswordHash(hash)
+
+Returns user details by password hash
+
+### Example
+
+```javascript
+import KnowYourPlaceApi from 'know_your_place_api';
+let defaultClient = KnowYourPlaceApi.ApiClient.instance;
+
+// Configure API key authorization: bearer
+let bearer = defaultClient.authentications['bearer'];
+bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//bearer.apiKeyPrefix = 'Token';
+
+let apiInstance = new KnowYourPlaceApi.UsersApi();
+let hash = 'hash_example'; // String |
+
+apiInstance.userControllerFindByPasswordHash(hash, (error, data, response) => {
+	if (error) {
+		console.error(error);
+	} else {
+		console.log('API called successfully. Returned data: ' + data);
+	}
+});
+```
+
+### Parameters
+
+| Name     | Type       | Description | Notes |
+| -------- | ---------- | ----------- | ----- |
+| **hash** | **String** |             |
 
 ### Return type
 
