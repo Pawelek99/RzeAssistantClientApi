@@ -4,4 +4,4 @@
 
 | Name      | Type                              | Description | Notes      |
 | --------- | --------------------------------- | ----------- | ---------- |
-| **oneOf** | [**ModelObject**](ModelObject.md) |             | [optional] |
+| **oneOf** | [**Object**](Object.md) |             | [optional] |

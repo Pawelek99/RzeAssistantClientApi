@@ -61,6 +61,7 @@ import InlineResponse4047 from './model/InlineResponse4047';
 import InlineResponse4048 from './model/InlineResponse4048';
 import InlineResponse4049 from './model/InlineResponse4049';
 import Interest from './model/Interest';
+import LoginUserDto from './model/LoginUserDto';
 import Notification from './model/Notification';
 import Role from './model/Role';
 import Theme from './model/Theme';
@@ -362,6 +363,11 @@ export {
 	 * @property {module:model/Interest}
 	 */
 	Interest,
+	/**
+	 * The LoginUserDto model constructor.
+	 * @property {module:model/LoginUserDto}
+	 */
+	LoginUserDto,
 	/**
 	 * The Notification model constructor.
 	 * @property {module:model/Notification}

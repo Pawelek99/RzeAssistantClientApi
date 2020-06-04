@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import Article from './Article';
+import Article from './Article';Object
 
 /**
  * The AllOfBannedArticleArticle model module.
